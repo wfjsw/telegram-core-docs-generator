@@ -38,7 +38,7 @@ function writeType(type) {
         var is_vector = false
         strip_vector = strip_flag
     }
-    target_type += `<a href="../type/${strip_vector}.md">${strip_vector}</a>`
+    target_type += `<a href="./type/${strip_vector}.md">${strip_vector}</a>`
     if (is_vector) target_type += `&gt;`
     return target_type
 }
