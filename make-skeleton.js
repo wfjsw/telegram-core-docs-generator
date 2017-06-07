@@ -3,11 +3,9 @@
 const fs = require('fs')
 const yaml = require('js-yaml')
 const parseTl = require('./lib/tl_convert')
+const sliceTl = require('./lib/tl_slice')
 
 const schema = parseTl(fs.readFileSync(`schema.tl`, 'utf8'), false)
-
-const isVector = /Vector<([^<^>]+)>/
-const extractVector = /(?:Vector<){0,1}([^<^>]+)(?:>){0,1}/
 
 var constructors = schema.constructors
 var methods = schema.methods
@@ -27,13 +25,7 @@ methods.forEach((method) => {
 
 types = types.filter((type) => type !== '#')
 
-types = types.map((type) => {
-    if (isVector.test(type)) {
-        return extractVector.exec(type)[1]
-    } else {
-        return type
-    }
-})
+types = types.map((type) => sliceTl.stripType(type))
 
 // Generate skeleton
 

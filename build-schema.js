@@ -1,7 +1,8 @@
 'use strict';
 
-var fs = require('fs')
-var ejs = require('ejs')
+const fs = require('fs')
+const ejs = require('ejs')
+const parseTl = require('./lib/tl_convert')
 
 var template = ejs.compile(fs.readFileSync('./templates/schema.md.ejs', 'utf8'))
 var source = fs.readFileSync(`schema.tl`, 'utf8')
@@ -63,5 +64,6 @@ pass2.forEach((line) => {
     schemas.push(gline)
 })
 
-
+fs.writeFileSync(`./generated/schema.tl`, source)
 fs.writeFileSync(`./generated/schema.md`, template({ schemas }))
+fs.writeFileSync(`./generated/schema.json`, JSON.stringify(parseTl(source, true)))

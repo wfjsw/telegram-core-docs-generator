@@ -1,20 +1,36 @@
 <%
 var isVector = /Vector<([^<^>]+)>/
 var extractVector = /(?:Vector<){0,1}([^<^>]+)(?:>){0,1}/
+var isFlag = /flags.([0-9]{1,})\?(.+)/
 function genSchema(id, name, type, params) {
     var generated = `<a href="../constructor/${name}.md">${name}</a>#`
     generated += id + ' '
     params.forEach((param) => {
         generated += `${param.name}:`
-        if (isVector.test(param.type)) {
-            var orig_type = extractVector.exec(param.type)[1]
-            generated += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
-        } else {
-            generated += `<a href="../type/${param.type}.md">${param.type}</a> `
-        }
+        generated += `${writeType(param.type)} `
     })
-    generated += `= <a href="../type/${type}.md">${type}</a>;`
+    generated += `= ${writeType(type)};`
     return generated
+}
+function writeType(type) {
+    var target_type
+    if (isFlag.test(type)) {
+        var flagrun = isFlag.exec(type)
+        target_type = `flags.${flagrun[1]}?`
+        var strip_flag = flagrun[2]
+    } else strip_flag = type
+    if (isVector.test(strip_flag)) {
+        var vectorrun = extractVector.exec(strip_flag)
+        var strip_vector = vectorrun[1]
+        target_type += `Vector&lt;`
+        var is_vector = true
+    } else {
+        var is_vector = false
+        strip_vector = strip_flag
+    }
+    target_type += `<a href="../type/${strip_vector}.md">${strip_vector}</a>`
+    if (is_vector) target_type += `&gt;`
+    return target_type
 }
 -%>
 # <%= predicate %>
@@ -30,9 +46,9 @@ function genSchema(id, name, type, params) {
 | Name | Type | Description |
 |------|:----:|-------------|
 <% params.forEach((param) => { -%>
-| **<%= param.name %>** | <% if (isVector.test(param.type)) { %>Vector<[<%= extractVector.exec(param.type)[1] %>]<% } else { %>[<%= param.type %>]<% } %>(../type/<%= extractVector.exec(param.type)[1] %>.md) | <%= params_desc[param.name] %> |
+| **<%= param.name %>** | <%= writeType(param.type) %> | <%= params_desc[param.name] %> |
 <% }) -%>
 
 ## Type
 
-[<%= type %>](../type/<%= type %>.md)
+<%= writeType(type) %>
