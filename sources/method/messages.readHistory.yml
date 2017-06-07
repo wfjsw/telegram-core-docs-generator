@@ -1,6 +1,6 @@
-description: Sample Description
+description: Marks message history as read.
 params_desc:
-  peer: Param description
-  max_id: Param description
-result: Describe the result
+  peer: Target user or group
+  max_id: If a positive value is passed, only messages with identifiers less or equal than the given one will be read
+result: ""
 errors: []

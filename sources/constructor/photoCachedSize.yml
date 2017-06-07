@@ -1,7 +1,11 @@
-description: Sample Description
+description: Description of an image and its content.
 params_desc:
-  type: Param description
-  location: Param description
-  w: Param description
-  h: Param description
-  bytes: Param description
+  type: Thumbnail type
+  location: File location
+  w: Image width
+  h: Image height
+  bytes: Binary data, file content
+additional_info: |
+  ## Thumbnail type and its content
+
+  See the [photoSize](photoSize.md) constructor.

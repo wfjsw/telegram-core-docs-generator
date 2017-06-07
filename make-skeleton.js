@@ -39,6 +39,7 @@ constructors.forEach((constructor) => {
         }
         var data = {
             description: "Sample Description",
+            additional_info: '',
             params_desc: {}
         }
         constructor.params.forEach((param) => {
@@ -60,7 +61,6 @@ methods.forEach((method) => {
         var data = {
             description: "Sample Description",
             params_desc: {},
-            result: "Describe the result",
             errors: []
         }
         method.params.forEach((param) => {

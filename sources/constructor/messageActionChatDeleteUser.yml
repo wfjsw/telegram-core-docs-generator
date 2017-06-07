@@ -1,3 +1,3 @@
-description: Sample Description
+description: User left the group.
 params_desc:
-  user_id: Param description
+  user_id: Leaving user ID

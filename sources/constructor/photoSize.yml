@@ -1,7 +1,21 @@
-description: Sample Description
+description: Image description.
 params_desc:
-  type: Param description
-  location: Param description
-  w: Param description
-  h: Param description
-  size: Param description
+  type: Thumbnail type
+  location: File location
+  w: Image width
+  h: Image height
+  size: File size
+additional_info: |
+  ## Thumbnail type and its sizes
+  
+  | Type | Image filter | Size limits, px |
+  |------|--------------|-----------------|
+  |`s`   |box           |100x100          |
+  |`m`   |box           |320x320          |
+  |`x`   |box           |800x800          |
+  |`y`   |box           |1280x1280        |
+  |`w`   |box           |2560x2560        |
+  |`a`   |crop          |160x160          |
+  |`b`   |crop          |320x320          |
+  |`c`   |crop          |640x640          |
+  |`d`   |crop          |1280x1280        |

@@ -1,3 +1,3 @@
-description: Sample Description
+description: Empty constructor. Image with this thumbnail is unavailable.
 params_desc:
-  type: Param description
+  type: Thumbnail type (see. [photoSize](photoSize.md))

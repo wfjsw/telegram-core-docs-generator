@@ -1,4 +1,4 @@
-description: Sample Description
+description: The data of a user.
 params_desc:
   flags: Param description
   self: Param description

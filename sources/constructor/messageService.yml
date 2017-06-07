@@ -1,14 +1,20 @@
-description: Sample Description
+description: Service message.
 params_desc:
-  flags: Param description
-  out: Param description
+  flags: >-
+    Flag mask for the message:<br>
+    `flags & 0x1` - message is unread (moved here from **unread**)<br>
+    `flags & 0x2` - message was sent by the current user (moved here from **out**)<br>
+    Parameter was added in Layer 17.
+  out: >-
+    Whether the message was sent by the current user<br>
+    Parameter is deprecated since Layer 17.
   mentioned: Param description
   media_unread: Param description
   silent: Param description
   post: Param description
-  id: Param description
-  from_id: Param description
-  to_id: Param description
+  id:	Message identifier
+  from_id: Message sender
+  to_id: Message recipient
   reply_to_msg_id: Param description
-  date: Param description
+  date: Date created
   action: Param description

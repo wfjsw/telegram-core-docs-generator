@@ -1,6 +1,6 @@
-description: Sample Description
+description: Wallpaper settings.
 params_desc:
-  id: Param description
-  title: Param description
-  sizes: Param description
-  color: Param description
+  id: Identifier
+  title: Name
+  sizes: List of available image sizes
+  color: Basic background color (RGB)

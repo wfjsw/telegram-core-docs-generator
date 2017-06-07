@@ -1,8 +1,8 @@
-description: Sample Description
+description: Deletes communication history.
 params_desc:
   flags: Param description
   just_clear: Param description
-  peer: Param description
+  peer: User or chat, communication history of which will be deleted
   max_id: Param description
-result: Describe the result
+result: ""
 errors: []

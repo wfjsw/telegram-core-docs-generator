@@ -1,15 +1,26 @@
-description: Sample Description
+description: Sends a text message.
 params_desc:
   flags: Param description
-  no_webpage: Param description
-  silent: Param description
+  no_webpage: Disables link previews for links in this message
+  silent: Prevent the message from producing a sound notification
   background: Param description
-  clear_draft: Param description
-  peer: Param description
+  clear_draft: Whether clear the draft after message sent
+  peer: User or chat where a message will be sent
   reply_to_msg_id: Param description
-  message: Param description
-  random_id: Param description
-  reply_markup: Param description
-  entities: Param description
-result: Describe the result
-errors: []
+  message: Message text
+  random_id: Unique client message ID required to prevent message resending
+  reply_markup: Additional interface options. A constructor for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user. (for bots only)
+  entities: "Special entities that appear in message, such as usernames, URLs, bot commands, etc."
+result: ""
+errors: 
+  - code: 400 BAD_REQUEST
+    type: PEER_ID_INVALID
+    description: Invalid peer
+  - code: 400 BAD_REQUEST
+    type: MESSAGE_EMPTY
+    description: Empty or invalid UTF8 message was sent
+  - code: 400 BAD_REQUEST
+    type: MESSAGE_TOO_LONG
+    description: >-
+      Message was too long.<br>
+      Current maximum length is 4096 UTF8 characters

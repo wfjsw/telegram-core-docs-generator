@@ -27,7 +27,6 @@
     - account.updateProfile
     - account.updateStatus
     - account.getWallPapers
-    - account.reportPeer
     - account.getPrivacy
     - account.setPrivacy
     - account.deleteAccount
@@ -162,6 +161,7 @@
     - channels.getAdminedPublicChannels
 - name: Working with Spam Report
   methods: 
+    - account.reportPeer
     - messages.reportSpam
     - messages.hideReportSpam
     - messages.reportEncryptedSpam

@@ -1,6 +1,6 @@
-description: Sample Description
+description: One-color background wallpaper (no image).
 params_desc:
-  id: Param description
-  title: Param description
-  bg_color: Param description
-  color: Param description
+  id: Identifier
+  title: Name
+  bg_color: Background color (RGB)
+  color: Basic background color (RGB)

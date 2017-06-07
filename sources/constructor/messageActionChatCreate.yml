@@ -1,4 +1,4 @@
-description: Sample Description
+description: Group created
 params_desc:
-  title: Param description
-  users: Param description
+  title: Group name
+  users: List of group members
