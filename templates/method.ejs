@@ -5,7 +5,7 @@ var isFlag = /flags.([0-9]{1,})\?(.+)/
 function genSchema(method, id, params, type, includes) {
     var generated = ``
     includes.forEach((line) => {
-        var gline = `<a href="../constructor/${line.predicate}">${line.predicate}</a>#${line.id} `
+        var gline = `<a href="../constructor/${line.predicate}.md">${line.predicate}</a>#${line.id} `
         line.params.forEach((param) => {
             gline += `${param.name}:`
             gline += `${writeType(param.type)} `

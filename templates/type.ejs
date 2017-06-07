@@ -6,7 +6,7 @@ function genSchema(constructors, methods) {
     var generated = ``
     if (constructors && constructors.length > 0)
     constructors.forEach((line) => {
-        var gline = `<a href="../constructor/${line.predicate}">${line.predicate}</a>#${line.id} `
+        var gline = `<a href="../constructor/${line.predicate}.md">${line.predicate}</a>#${line.id} `
         line.params.forEach((param) => {
             gline += `${param.name}:`
             gline += `${writeType(param.type)} `
@@ -17,7 +17,7 @@ function genSchema(constructors, methods) {
     if (methods && methods.length > 0) {
         generated += '\n---functions---\n'
         methods.forEach((method) => {
-            var gline = `<a href="../method/${method.method}">${method.method}</a>#${method.id} `
+            var gline = `<a href="../method/${method.method}.md">${method.method}</a>#${method.id} `
             method.params.forEach((param) => {
                 gline += `${param.name}:`
                 gline += `${writeType(param.type)} `
