@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  size: Param description
+  mime_type: Param description
+  file_type: Param description
+  mtime: Param description
+  bytes: Param description

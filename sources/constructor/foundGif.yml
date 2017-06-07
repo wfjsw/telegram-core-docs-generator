@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  url: Param description
+  thumb_url: Param description
+  content_url: Param description
+  content_type: Param description
+  w: Param description
+  h: Param description

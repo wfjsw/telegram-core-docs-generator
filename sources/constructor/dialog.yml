@@ -1,0 +1,12 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  pinned: Param description
+  peer: Param description
+  top_message: Param description
+  read_inbox_max_id: Param description
+  read_outbox_max_id: Param description
+  unread_count: Param description
+  notify_settings: Param description
+  pts: Param description
+  draft: Param description

@@ -1,0 +1,10 @@
+description: Sample Description
+params_desc:
+  api_id: Param description
+  device_model: Param description
+  system_version: Param description
+  app_version: Param description
+  lang_code: Param description
+  query: Param description
+result: Describe the result
+errors: []

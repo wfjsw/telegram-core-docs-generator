@@ -1,0 +1,11 @@
+description: Sample Description
+params_desc:
+  id: Param description
+  access_hash: Param description
+  date: Param description
+  mime_type: Param description
+  size: Param description
+  thumb: Param description
+  dc_id: Param description
+  version: Param description
+  attributes: Param description

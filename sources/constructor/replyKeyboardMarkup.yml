@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  resize: Param description
+  single_use: Param description
+  selective: Param description
+  rows: Param description

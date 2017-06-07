@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  geo_point: Param description
+  title: Param description
+  address: Param description
+  provider: Param description
+  venue_id: Param description

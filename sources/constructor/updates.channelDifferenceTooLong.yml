@@ -1,0 +1,13 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  final: Param description
+  pts: Param description
+  timeout: Param description
+  top_message: Param description
+  read_inbox_max_id: Param description
+  read_outbox_max_id: Param description
+  unread_count: Param description
+  messages: Param description
+  chats: Param description
+  users: Param description

@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  pts: Param description
+  count: Param description
+  messages: Param description
+  chats: Param description
+  users: Param description

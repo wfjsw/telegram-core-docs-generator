@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  mask: Param description
+  alt: Param description
+  stickerset: Param description
+  mask_coords: Param description

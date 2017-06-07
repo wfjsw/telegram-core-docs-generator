@@ -1,0 +1,254 @@
+- name: Registration / Authorization
+  methods: 
+    - auth.checkPhone
+    - auth.sendCode
+    - auth.signUp
+    - auth.signIn
+    - auth.logOut
+    - auth.resetAuthorizations
+    - auth.sendInvites
+    - auth.exportAuthorization
+    - auth.importAuthorization
+    - auth.bindTempAuthKey
+    - auth.importBotAuthorization
+    - auth.checkPassword
+    - auth.requestPasswordRecovery
+    - auth.recoverPassword
+    - auth.resendCode
+    - auth.cancelCode
+    - auth.dropTempAuthKeys
+- name: Working with Account Settings
+  methods: 
+    - account.registerDevice
+    - account.unregisterDevice
+    - account.updateNotifySettings
+    - account.getNotifySettings
+    - account.resetNotifySettings
+    - account.updateProfile
+    - account.updateStatus
+    - account.getWallPapers
+    - account.reportPeer
+    - account.getPrivacy
+    - account.setPrivacy
+    - account.deleteAccount
+    - account.getAccountTTL
+    - account.setAccountTTL
+    - account.sendChangePhoneCode
+    - account.changePhone
+    - account.updateDeviceLocked
+    - account.getAuthorizations
+    - account.resetAuthorization
+    - account.getPassword
+    - account.getPasswordSettings
+    - account.updatePasswordSettings
+    - account.sendConfirmPhoneCode
+    - account.confirmPhone
+    - account.getTmpPassword
+    - photos.updateProfilePhoto
+    - photos.uploadProfilePhoto
+    - photos.deletePhotos
+- name: Working with Users
+  methods: 
+    - users.getUsers
+    - users.getFullUser
+    - photos.getUserPhotos
+    - account.checkUsername
+    - account.updateUsername
+    - contacts.resolveUsername
+- name: Working with Contacts
+  methods: 
+    - contacts.getStatuses
+    - contacts.getContacts
+    - contacts.importContacts
+    - contacts.deleteContact
+    - contacts.deleteContacts
+    - contacts.exportCard
+    - contacts.importCard
+    - contacts.search
+    - contacts.getTopPeers
+    - contacts.resetTopPeerRating
+- name: Working with the Black List
+  methods: 
+    - contacts.block
+    - contacts.unblock
+    - contacts.getBlocked
+- name: Working with Messages
+  methods:
+    - messages.getMessages
+    - messages.getDialogs
+    - messages.getHistory
+    - messages.search
+    - messages.searchGlobal
+    - messages.readHistory
+    - messages.deleteHistory
+    - messages.deleteMessages
+    - messages.receivedMessages
+    - messages.setTyping
+    - messages.sendMessage
+    - messages.sendMedia
+    - messages.forwardMessage
+    - messages.forwardMessages
+    - messages.readMessageContents
+    - messages.editMessage
+    - messages.getMessagesViews
+    - channels.readHistory
+    - channels.deleteMessages
+    - channels.deleteUserHistory
+    - channels.getMessages
+    - messages.toggleDialogPin
+    - messages.reorderPinnedDialogs
+    - messages.getPinnedDialogs
+    - messages.getMessageEditData
+    - messages.getPeerDialogs
+    - messages.saveDraft
+    - messages.getAllDrafts
+- name: Working with Link Preview / Instant View™
+  methods:
+    - messages.getWebPagePreview
+    - messages.getWebPage
+- name: Working with Chats
+  methods: 
+    - messages.getPeerSettings
+    - messages.getChats
+    - messages.getFullChat
+    - messages.editChatTitle
+    - messages.editChatPhoto
+    - messages.addChatUser
+    - messages.deleteChatUser
+    - messages.createChat
+    - messages.migrateChat
+    - messages.toggleChatAdmins
+    - messages.editChatAdmin
+    - messages.exportChatInvite
+    - messages.checkChatInvite
+    - messages.importChatInvite
+    - messages.getCommonChats
+    - messages.getAllChats
+- name: Working with Secret Chats
+  methods: 
+    - messages.getDhConfig
+    - messages.requestEncryption
+    - messages.acceptEncryption
+    - messages.discardEncryption
+    - messages.setEncryptedTyping
+    - messages.readEncryptedHistory
+    - messages.sendEncrypted
+    - messages.sendEncryptedFile
+    - messages.sendEncryptedService
+    - messages.receivedQueue
+- name: Working with Channels / Supergroups
+  methods: 
+    - channels.getParticipants
+    - channels.getParticipant
+    - channels.getChannels
+    - channels.getFullChannel
+    - channels.createChannel
+    - channels.editAbout
+    - channels.editAdmin
+    - channels.editTitle
+    - channels.editPhoto
+    - channels.checkUsername
+    - channels.updateUsername
+    - channels.joinChannel
+    - channels.leaveChannel
+    - channels.inviteToChannel
+    - channels.kickFromChannel
+    - channels.exportInvite
+    - channels.deleteChannel
+    - channels.toggleInvites
+    - channels.exportMessageLink
+    - channels.toggleSignatures
+    - channels.updatePinnedMessage
+    - channels.getAdminedPublicChannels
+- name: Working with Spam Report
+  methods: 
+    - messages.reportSpam
+    - messages.hideReportSpam
+    - messages.reportEncryptedSpam
+    - channels.reportSpam
+- name: Working with Files
+  methods:
+    - upload.saveFilePart
+    - upload.getFile
+    - upload.saveBigFilePart
+    - upload.getWebFile
+    - upload.getCdnFile
+    - upload.reuploadCdnFile
+    - messages.getDocumentByHash
+- name: Working with Telegram Call™
+  methods: 
+    - phone.getCallConfig
+    - phone.requestCall
+    - phone.acceptCall
+    - phone.confirmCall
+    - phone.receivedCall
+    - phone.discardCall
+    - phone.setCallRating
+    - phone.saveCallDebug
+- name: Working with Sticker Packs / GIFs / Masks
+  methods:
+    - messages.getAllStickers
+    - messages.getStickerSet
+    - messages.installStickerSet
+    - messages.uninstallStickerSet
+    - messages.getFeaturedStickers
+    - messages.readFeaturedStickers
+    - messages.getRecentStickers
+    - messages.saveRecentSticker
+    - messages.clearRecentStickers
+    - messages.getArchivedStickers
+    - messages.getMaskStickers
+    - messages.getAttachedStickers
+    - messages.searchGifs
+    - messages.getSavedGifs
+    - messages.saveGif
+    - messages.reorderStickerSets
+- name: Working with Updates
+  methods:
+    - updates.getState
+    - updates.getDifference
+    - updates.getChannelDifference
+- name: Working with Payments
+  methods: 
+    - payments.getPaymentForm
+    - payments.getPaymentReceipt
+    - payments.validateRequestedInfo
+    - payments.sendPaymentForm
+    - payments.getSavedInfo
+    - payments.clearSavedInfo
+    - messages.setBotShippingResults
+    - messages.setBotPrecheckoutResults
+- name: Working with Bots
+  methods: 
+    - messages.startBot
+    - bots.sendCustomRequest
+    - bots.answerWebhookJSONQuery
+    - messages.getInlineBotResults
+    - messages.setInlineBotResults
+    - messages.sendInlineBotResult
+    - messages.editInlineBotMessage
+    - messages.getBotCallbackAnswer
+    - messages.setBotCallbackAnswer
+- name: Working with Games
+  methods:
+    - messages.setGameScore
+    - messages.setInlineGameScore
+    - messages.getGameHighScores
+    - messages.getInlineGameHighScores
+- name: Miscellaneous
+  methods:
+    - invokeAfterMsg
+    - invokeAfterMsgs
+    - initConnection
+    - invokeWithLayer
+    - invokeWithoutUpdates
+    - help.getConfig
+    - help.getNearestDc
+    - help.getAppUpdate
+    - help.saveAppLog
+    - help.getInviteText
+    - help.getSupport
+    - help.getAppChangelog
+    - help.getTermsOfService
+    - help.setBotUpdatesStatus
+    - help.getCdnConfig

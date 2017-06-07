@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  need_rating: Param description
+  need_debug: Param description
+  id: Param description
+  reason: Param description
+  duration: Param description

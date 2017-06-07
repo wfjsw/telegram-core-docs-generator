@@ -1,0 +1,23 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  creator: Param description
+  kicked: Param description
+  left: Param description
+  editor: Param description
+  moderator: Param description
+  broadcast: Param description
+  verified: Param description
+  megagroup: Param description
+  restricted: Param description
+  democracy: Param description
+  signatures: Param description
+  min: Param description
+  id: Param description
+  access_hash: Param description
+  title: Param description
+  username: Param description
+  photo: Param description
+  date: Param description
+  version: Param description
+  restriction_reason: Param description

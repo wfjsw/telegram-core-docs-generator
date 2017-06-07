@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  username: Param description
+result: Describe the result
+errors: []

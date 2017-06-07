@@ -1,0 +1,10 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  force: Param description
+  channel: Param description
+  filter: Param description
+  pts: Param description
+  limit: Param description
+result: Describe the result
+errors: []

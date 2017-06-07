@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  dc_id: Param description
+  file_token: Param description
+  encryption_key: Param description
+  encryption_iv: Param description

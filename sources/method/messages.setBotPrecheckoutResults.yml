@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  success: Param description
+  query_id: Param description
+  error: Param description
+result: Describe the result
+errors: []

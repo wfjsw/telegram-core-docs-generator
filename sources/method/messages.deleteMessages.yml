@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  revoke: Param description
+  id: Param description
+result: Describe the result
+errors: []

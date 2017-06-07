@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  currency: Param description
+  total_amount: Param description
+  payload: Param description
+  info: Param description
+  shipping_option_id: Param description
+  charge: Param description

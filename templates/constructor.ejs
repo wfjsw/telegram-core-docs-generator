@@ -1,0 +1,38 @@
+<%
+var isVector = /Vector<([^<^>]+)>/
+var extractVector = /(?:Vector<){0,1}([^<^>]+)(?:>){0,1}/
+function genSchema(id, name, type, params) {
+    var generated = `<a href="../constructor/${name}.md">${name}</a>#`
+    generated += id + ' '
+    params.forEach((param) => {
+        generated += `${param.name}:`
+        if (isVector.test(param.type)) {
+            var orig_type = extractVector.exec(param.type)[1]
+            generated += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+        } else {
+            generated += `<a href="../type/${param.type}.md">${param.type}</a> `
+        }
+    })
+    generated += `= <a href="../type/${type}.md">${type}</a>;`
+    return generated
+}
+-%>
+# <%= predicate %>
+
+<%= description %>
+
+<pre>
+<%- genSchema(id, predicate, type, params) %>
+</pre>
+
+## Parameters
+
+| Name | Type | Description |
+|------|:----:|-------------|
+<% params.forEach((param) => { -%>
+| **<%= param.name %>** | <% if (isVector.test(param.type)) { %>Vector<[<%= extractVector.exec(param.type)[1] %>]<% } else { %>[<%= param.type %>]<% } %>(../type/<%= extractVector.exec(param.type)[1] %>.md) | <%= params_desc[param.name] %> |
+<% }) -%>
+
+## Type
+
+[<%= type %>](../type/<%= type %>.md)

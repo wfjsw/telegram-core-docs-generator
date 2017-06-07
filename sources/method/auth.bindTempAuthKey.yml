@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  perm_auth_key_id: Param description
+  nonce: Param description
+  expires_at: Param description
+  encrypted_message: Param description
+result: Describe the result
+errors: []

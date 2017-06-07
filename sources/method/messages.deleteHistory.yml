@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  just_clear: Param description
+  peer: Param description
+  max_id: Param description
+result: Describe the result
+errors: []

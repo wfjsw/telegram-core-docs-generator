@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  phone_number: Param description
+  phone_code_hash: Param description
+result: Describe the result
+errors: []

@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  custom_method: Param description
+  params: Param description
+result: Describe the result
+errors: []

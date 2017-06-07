@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  except_auth_keys: Param description
+result: Describe the result
+errors: []

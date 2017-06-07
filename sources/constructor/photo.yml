@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  has_stickers: Param description
+  id: Param description
+  access_hash: Param description
+  date: Param description
+  sizes: Param description

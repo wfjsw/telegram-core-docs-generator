@@ -1,0 +1,10 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  edit_message: Param description
+  force: Param description
+  id: Param description
+  user_id: Param description
+  score: Param description
+result: Describe the result
+errors: []

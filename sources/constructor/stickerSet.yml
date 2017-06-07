@@ -1,0 +1,13 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  installed: Param description
+  archived: Param description
+  official: Param description
+  masks: Param description
+  id: Param description
+  access_hash: Param description
+  title: Param description
+  short_name: Param description
+  count: Param description
+  hash: Param description

@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  chat_id: Param description
+  self_participant: Param description

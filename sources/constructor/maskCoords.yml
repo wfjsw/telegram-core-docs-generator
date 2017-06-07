@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  'n': Param description
+  x: Param description
+  'y': Param description
+  zoom: Param description

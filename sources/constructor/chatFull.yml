@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  id: Param description
+  participants: Param description
+  chat_photo: Param description
+  notify_settings: Param description
+  exported_invite: Param description
+  bot_info: Param description

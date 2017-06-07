@@ -1,0 +1,11 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  full_width: Param description
+  allow_scrolling: Param description
+  url: Param description
+  html: Param description
+  poster_photo_id: Param description
+  w: Param description
+  h: Param description
+  caption: Param description

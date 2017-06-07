@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  url: Param description
+  photo: Param description
+  document: Param description

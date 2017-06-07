@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  name: Param description
+  phone: Param description
+  email: Param description
+  shipping_address: Param description

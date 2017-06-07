@@ -1,0 +1,65 @@
+<%
+var isVector = /Vector<([^<^>]+)>/
+var extractVector = /(?:Vector<){0,1}([^<^>]+)(?:>){0,1}/
+function genSchema(constructors, methods) {
+    var generated = ``
+    if (constructors && constructors.length > 0)
+    constructors.forEach((line) => {
+        var gline = `<a href="../constructor/${line.predicate}">${line.predicate}</a>#${line.id} `
+        line.params.forEach((param) => {
+            gline += `${param.name}:`
+            if (isVector.test(param.type)) {
+                var orig_type = extractVector.exec(param.type)[1]
+                gline += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+            } else {
+                gline += `<a href="../type/${param.type}.md">${param.type}</a> `
+            }
+        })
+        gline += `= <a href="../type/${line.type}.md">${line.type}</a>;\n`
+        generated += gline
+    })
+    if (methods && methods.length > 0) {
+        generated += '\n---functions---\n'
+        methods.forEach((method) => {
+            var gline = `<a href="../method/${method.method}">${method.method}</a>#${method.id} `
+            method.params.forEach((param) => {
+                gline += `${param.name}:`
+                if (isVector.test(param.type)) {
+                    var orig_type = extractVector.exec(param.type)[1]
+                    gline += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+                } else {
+                    gline += `<a href="../type/${param.type}.md">${param.type}</a> `
+                }
+            })
+            gline += `= <a href="../type/${method.type}.md">${method.type}</a>;\n`
+            generated += gline
+        })
+    }
+    return generated
+}
+-%>
+# <%= type %>
+
+<%= description %>
+
+<pre>
+<%- genSchema(constructors, methods) %>
+</pre>
+
+<% if (constructors.length > 0) { -%>
+## Constructors
+
+| Name | Description |
+|------|-------------|
+<% constructors.forEach((cons) => { -%>
+| [<%= cons.predicate %>](../constructor/<%= cons.predicate %>.md) | <%= cons.description %> |
+<% })} -%>
+
+<% if (methods.length > 0) { -%>
+## Methods
+
+| Name | Description |
+|------|-------------|
+<% methods.forEach((mets) => { -%>
+| [<%= mets.method %>](../method/<%= mets.method %>.md) | <%= mets.description %> |
+<% })} -%>

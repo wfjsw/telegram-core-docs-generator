@@ -1,0 +1,16 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  creator: Param description
+  kicked: Param description
+  left: Param description
+  admins_enabled: Param description
+  admin: Param description
+  deactivated: Param description
+  id: Param description
+  title: Param description
+  photo: Param description
+  participants_count: Param description
+  date: Param description
+  version: Param description
+  migrated_to: Param description

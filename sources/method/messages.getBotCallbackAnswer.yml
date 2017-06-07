@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  game: Param description
+  peer: Param description
+  msg_id: Param description
+  data: Param description
+result: Describe the result
+errors: []

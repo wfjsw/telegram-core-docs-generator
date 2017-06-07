@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  sha256: Param description
+  size: Param description
+  mime_type: Param description
+result: Describe the result
+errors: []

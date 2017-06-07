@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  url: Param description
+  webpage_id: Param description
+  author_photo_id: Param description
+  author: Param description
+  date: Param description
+  blocks: Param description
+  caption: Param description

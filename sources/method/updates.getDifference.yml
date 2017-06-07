@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  pts: Param description
+  pts_total_limit: Param description
+  date: Param description
+  qts: Param description
+result: Describe the result
+errors: []

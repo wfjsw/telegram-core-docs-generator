@@ -1,0 +1,13 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  date: Param description
+  bot_id: Param description
+  invoice: Param description
+  provider_id: Param description
+  info: Param description
+  shipping: Param description
+  currency: Param description
+  total_amount: Param description
+  credentials_title: Param description
+  users: Param description

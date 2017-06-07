@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  file: Param description
+  thumb: Param description
+  mime_type: Param description
+  attributes: Param description
+  caption: Param description
+  stickers: Param description

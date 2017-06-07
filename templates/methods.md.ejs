@@ -1,0 +1,12 @@
+# All Methods
+
+<% categories.forEach((category) => { %>
+## <%= category.name %> 
+
+| Method | Description |
+|--------|-------------|
+<% category.methods.forEach((method) => { -%>
+| [<%= method.method %>](method/<%= method.method %>.md) | <%= method.description %> |
+<% }) -%>
+
+<% }) -%>

@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  new_messages: Param description
+  new_encrypted_messages: Param description
+  other_updates: Param description
+  chats: Param description
+  users: Param description
+  intermediate_state: Param description

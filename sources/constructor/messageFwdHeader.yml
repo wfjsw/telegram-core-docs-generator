@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  from_id: Param description
+  date: Param description
+  channel_id: Param description
+  channel_post: Param description

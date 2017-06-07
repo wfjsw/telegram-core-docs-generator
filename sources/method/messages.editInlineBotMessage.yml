@@ -1,0 +1,10 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  no_webpage: Param description
+  id: Param description
+  message: Param description
+  reply_markup: Param description
+  entities: Param description
+result: Describe the result
+errors: []

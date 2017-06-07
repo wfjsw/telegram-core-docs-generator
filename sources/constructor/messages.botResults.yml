@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  gallery: Param description
+  query_id: Param description
+  next_offset: Param description
+  switch_pm: Param description
+  results: Param description
+  cache_time: Param description

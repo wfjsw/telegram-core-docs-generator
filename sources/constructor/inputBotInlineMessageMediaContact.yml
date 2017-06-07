@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  phone_number: Param description
+  first_name: Param description
+  last_name: Param description
+  reply_markup: Param description

@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  has_saved_credentials: Param description
+  saved_info: Param description

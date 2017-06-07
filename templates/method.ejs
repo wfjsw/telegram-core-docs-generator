@@ -1,0 +1,64 @@
+<%
+var isVector = /Vector<([^<^>]+)>/
+var extractVector = /(?:Vector<){0,1}([^<^>]+)(?:>){0,1}/
+function genSchema(method, id, params, type, includes) {
+    var generated = ``
+    includes.forEach((line) => {
+        var gline = `<a href="../constructor/${line.predicate}">${line.predicate}</a>#${line.id} `
+        line.params.forEach((param) => {
+            gline += `${param.name}:`
+            if (isVector.test(param.type)) {
+                var orig_type = extractVector.exec(param.type)[1]
+                gline += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+            } else {
+                gline += `<a href="../type/${param.type}.md">${param.type}</a> `
+            }
+        })
+        gline += `= <a href="../type/${line.type}.md">${line.type}</a>;\n`
+        generated += gline
+    })
+    generated += '\n---functions---\n'
+    generated += `<a href="../method/${method}.md">${method}</a>#`
+    generated += id + ' '
+    params.forEach((param) => {
+        generated += `${param.name}:`
+        if (isVector.test(param.type)) {
+            var orig_type = extractVector.exec(param.type)[1]
+            generated += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+        } else {
+            generated += `<a href="../type/${param.type}.md">${param.type}</a> `
+        }
+    })
+    generated += `= <a href="../type/${type}.md">${type}</a>;`
+    return generated
+}
+-%>
+# <%= method %>
+
+<%= description %>
+
+<pre>
+<%- genSchema(method, id, params, type, includes) %>
+</pre>
+
+## Parameters
+
+| Name | Type | Description |
+|------|:----:|-------------|
+<% params.forEach((param) => { -%>
+| **<%= param.name %>** | <% if (isVector.test(param.type)) { %>Vector<[<%= extractVector.exec(param.type)[1] %>]<% } else { %>[<%= param.type %>]<% } %>(../type/<%= extractVector.exec(param.type)[1] %>.md) | <%= params_desc[param.name] %> |
+<% }) -%>
+
+## Result
+
+<%= result %>
+
+<% if (errors && errors.length > 0) { -%>
+## Possible errors
+
+| Code | Type | Description |
+|------|------|-------------|
+<% errors.forEach((error) => { -%>
+| **<%= error.code %>** | <%= error.type %> | <%= error.description %> |
+<% }) -%>
+<% } -%>

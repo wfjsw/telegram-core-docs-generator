@@ -1,0 +1,13 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  silent: Param description
+  background: Param description
+  clear_draft: Param description
+  peer: Param description
+  reply_to_msg_id: Param description
+  media: Param description
+  random_id: Param description
+  reply_markup: Param description
+result: Describe the result
+errors: []

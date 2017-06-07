@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  offline: Param description
+result: Describe the result
+errors: []

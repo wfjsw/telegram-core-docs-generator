@@ -1,0 +1,38 @@
+<%
+var isVector = /Vector<([^<^>]+)>/
+var extractVector = /(?:Vector<){0,1}([^<^>]+)(?:>){0,1}/
+function genSchema(schemas) {
+    var final = ''
+    var head = 0
+    schemas.forEach((line) => {
+        if (typeof line == 'string') {
+            if (line === '---types---') head = 0
+            else if (line === '---functions---') head = 1
+            final += line + '\n'
+        } else {
+            var gline = `<a href="../${head == 0 ? 'constructor/' + line.predicate : 'method/' + line.method}.md">${head == 0 ? line.predicate : line.method}</a>#${line.id} `
+            line.params.forEach((param) => {
+                gline += `${param.name}:`
+                if (isVector.test(param.type)) {
+                    var orig_type = extractVector.exec(param.type)[1]
+                    gline += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+                } else {
+                    gline += `<a href="../type/${param.type}.md">${param.type}</a> `
+                }
+            })
+            gline += `= <a href="../type/${line.type}.md">${line.type}</a>;\n`
+            final += gline
+        }
+    })
+    return final
+}
+-%>
+# Current TL-schema
+
+Below you will find the current TL-schema. 
+
+See also the [detailed schema in JSON »](schema.json)
+
+<pre>
+<%- genSchema(schemas) %>
+</pre>

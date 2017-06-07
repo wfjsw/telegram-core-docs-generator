@@ -1,0 +1,15 @@
+description: Sample Description
+params_desc:
+  hash: Param description
+  flags: Param description
+  device_model: Param description
+  platform: Param description
+  system_version: Param description
+  api_id: Param description
+  app_name: Param description
+  app_version: Param description
+  date_created: Param description
+  date_active: Param description
+  ip: Param description
+  country: Param description
+  region: Param description

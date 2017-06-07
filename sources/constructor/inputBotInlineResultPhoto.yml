@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  id: Param description
+  type: Param description
+  photo: Param description
+  send_message: Param description

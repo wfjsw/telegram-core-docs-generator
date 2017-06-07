@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  peer: Param description
+  random_id: Param description
+  data: Param description
+result: Describe the result
+errors: []

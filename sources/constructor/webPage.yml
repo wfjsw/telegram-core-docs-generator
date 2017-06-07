@@ -1,0 +1,20 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  id: Param description
+  url: Param description
+  display_url: Param description
+  hash: Param description
+  type: Param description
+  site_name: Param description
+  title: Param description
+  description: Param description
+  photo: Param description
+  embed_url: Param description
+  embed_type: Param description
+  embed_width: Param description
+  embed_height: Param description
+  duration: Param description
+  author: Param description
+  document: Param description
+  cached_page: Param description

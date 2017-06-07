@@ -1,0 +1,26 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  self: Param description
+  contact: Param description
+  mutual_contact: Param description
+  deleted: Param description
+  bot: Param description
+  bot_chat_history: Param description
+  bot_nochats: Param description
+  verified: Param description
+  restricted: Param description
+  min: Param description
+  bot_inline_geo: Param description
+  id: Param description
+  access_hash: Param description
+  first_name: Param description
+  last_name: Param description
+  username: Param description
+  phone: Param description
+  photo: Param description
+  status: Param description
+  bot_info_version: Param description
+  restriction_reason: Param description
+  bot_inline_placeholder: Param description
+  lang_code: Param description

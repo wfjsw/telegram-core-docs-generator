@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  type: Param description
+  location: Param description
+  w: Param description
+  h: Param description
+  bytes: Param description

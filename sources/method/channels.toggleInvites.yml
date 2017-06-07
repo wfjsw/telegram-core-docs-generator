@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  channel: Param description
+  enabled: Param description
+result: Describe the result
+errors: []

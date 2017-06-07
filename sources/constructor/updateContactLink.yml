@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  user_id: Param description
+  my_link: Param description
+  foreign_link: Param description

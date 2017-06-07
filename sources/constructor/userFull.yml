@@ -1,0 +1,13 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  blocked: Param description
+  phone_calls_available: Param description
+  phone_calls_private: Param description
+  user: Param description
+  about: Param description
+  link: Param description
+  profile_photo: Param description
+  notify_settings: Param description
+  bot_info: Param description
+  common_chats_count: Param description

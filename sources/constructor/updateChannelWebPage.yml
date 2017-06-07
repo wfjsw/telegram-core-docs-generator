@@ -1,0 +1,6 @@
+description: Sample Description
+params_desc:
+  channel_id: Param description
+  webpage: Param description
+  pts: Param description
+  pts_count: Param description

@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  voice: Param description
+  duration: Param description
+  title: Param description
+  performer: Param description
+  waveform: Param description

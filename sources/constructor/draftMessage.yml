@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  no_webpage: Param description
+  reply_to_msg_id: Param description
+  message: Param description
+  entities: Param description
+  date: Param description

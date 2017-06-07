@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  street_line1: Param description
+  street_line2: Param description
+  city: Param description
+  state: Param description
+  country_iso2: Param description
+  post_code: Param description

@@ -1,0 +1,15 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  id: Param description
+  type: Param description
+  title: Param description
+  description: Param description
+  url: Param description
+  thumb_url: Param description
+  content_url: Param description
+  content_type: Param description
+  w: Param description
+  h: Param description
+  duration: Param description
+  send_message: Param description

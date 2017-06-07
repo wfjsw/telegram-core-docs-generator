@@ -1,0 +1,10 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  query_id: Param description
+  user_id: Param description
+  peer: Param description
+  msg_id: Param description
+  chat_instance: Param description
+  data: Param description
+  game_short_name: Param description

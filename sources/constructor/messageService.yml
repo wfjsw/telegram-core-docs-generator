@@ -1,0 +1,14 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  out: Param description
+  mentioned: Param description
+  media_unread: Param description
+  silent: Param description
+  post: Param description
+  id: Param description
+  from_id: Param description
+  to_id: Param description
+  reply_to_msg_id: Param description
+  date: Param description
+  action: Param description

@@ -1,0 +1,7 @@
+description: Sample Description
+params_desc:
+  peer: Param description
+  id: Param description
+  increment: Param description
+result: Describe the result
+errors: []

@@ -1,0 +1,8 @@
+description: Sample Description
+params_desc:
+  bot: Param description
+  peer: Param description
+  random_id: Param description
+  start_param: Param description
+result: Describe the result
+errors: []
