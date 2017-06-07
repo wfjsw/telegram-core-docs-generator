@@ -10,17 +10,17 @@ function genSchema(schemas) {
             else if (line === '---functions---') head = 1
             final += line + '\n'
         } else {
-            var gline = `<a href="../${head == 0 ? 'constructor/' + line.predicate : 'method/' + line.method}.md">${head == 0 ? line.predicate : line.method}</a>#${line.id} `
+            var gline = `<a href="./${head == 0 ? 'constructor/' + line.predicate : 'method/' + line.method}.md">${head == 0 ? line.predicate : line.method}</a>#${line.id} `
             line.params.forEach((param) => {
                 gline += `${param.name}:`
                 if (isVector.test(param.type)) {
                     var orig_type = extractVector.exec(param.type)[1]
-                    gline += `Vector&lt;<a href="../type/${orig_type}.md">${orig_type}</a>&gt; `
+                    gline += `Vector&lt;<a href="./type/${orig_type}.md">${orig_type}</a>&gt; `
                 } else {
-                    gline += `<a href="../type/${param.type}.md">${param.type}</a> `
+                    gline += `<a href="./type/${param.type}.md">${param.type}</a> `
                 }
             })
-            gline += `= <a href="../type/${line.type}.md">${line.type}</a>;\n`
+            gline += `= <a href="./type/${line.type}.md">${line.type}</a>;\n`
             final += gline
         }
     })
