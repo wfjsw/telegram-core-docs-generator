@@ -23,7 +23,7 @@ function genSchema(schemas) {
     return final
 }
 function writeType(type) {
-    var target_type
+    var target_type = ""
     if (isFlag.test(type)) {
         var flagrun = isFlag.exec(type)
         target_type = `flags.${flagrun[1]}?`
@@ -45,7 +45,7 @@ function writeType(type) {
 -%>
 # Current TL-schema
 
-Below you will find the current TL-schema. 
+Below you will find [the current TL-schema](schema.tl). 
 
 See also the [detailed schema in JSON »](schema.json)
 

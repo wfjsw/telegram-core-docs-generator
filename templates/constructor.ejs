@@ -13,7 +13,7 @@ function genSchema(id, name, type, params) {
     return generated
 }
 function writeType(type) {
-    var target_type
+    var target_type = ""
     if (isFlag.test(type)) {
         var flagrun = isFlag.exec(type)
         target_type = `flags.${flagrun[1]}?`
@@ -46,7 +46,7 @@ function writeType(type) {
 | Name | Type | Description |
 |------|:----:|-------------|
 <% params.forEach((param) => { -%>
-| **<%= param.name %>** | <%= writeType(param.type) %> | <%= params_desc[param.name] %> |
+| **<%= param.name %>** | <%- writeType(param.type) %> | <%= params_desc[param.name] %> |
 <% }) -%>
 
 ## Type

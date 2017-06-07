@@ -11,8 +11,6 @@ const schema = parseTl(fs.readFileSync(`schema.tl`, 'utf8'), false)
 var constructors = schema.constructors
 var methods = schema.methods
 
-
-
 // build all types
 var types = []
 

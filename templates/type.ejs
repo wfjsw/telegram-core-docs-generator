@@ -29,7 +29,7 @@ function genSchema(constructors, methods) {
     return generated
 }
 function writeType(type) {
-    var target_type
+    var target_type = ""
     if (isFlag.test(type)) {
         var flagrun = isFlag.exec(type)
         target_type = `flags.${flagrun[1]}?`
