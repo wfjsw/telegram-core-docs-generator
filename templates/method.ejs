@@ -25,7 +25,7 @@ function genSchema(method, id, params, type, includes) {
 }
 function writeType(type) {
     var target_type = ""
-    if (type === 'X' && type === '#' && type === '!X') return type
+    if (type === 'X' || type === '#' || type === '!X') return type
     if (isFlag.test(type)) {
         var flagrun = isFlag.exec(type)
         target_type = `flags.${flagrun[1]}?`
