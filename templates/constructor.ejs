@@ -14,6 +14,7 @@ function genSchema(id, name, type, params) {
 }
 function writeType(type) {
     var target_type = ""
+    if (type === 'X' && type === '#' && type === '!X') return type
     if (isFlag.test(type)) {
         var flagrun = isFlag.exec(type)
         target_type = `flags.${flagrun[1]}?`
@@ -38,7 +39,7 @@ function writeType(type) {
 <%= description %>
 
 <pre>
-<%- genSchema(id, predicate, type, params) -%>
+<%- genSchema(id, predicate, type, params) %>
 </pre>
 <% if (params.length > 0) { -%>
 ## Parameters

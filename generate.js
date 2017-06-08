@@ -24,7 +24,7 @@ methods.forEach((method) => {
         types.push(method.type)
 })
 
-types = types.filter((type) => type !== '#')
+types = types.filter((type) => type !== '#' && type !== 'X' && type !== '!X')
 
 types = types.map((type) => sliceTl.stripType(type))
 
