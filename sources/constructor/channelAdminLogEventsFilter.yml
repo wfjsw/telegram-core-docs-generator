@@ -1,0 +1,18 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  join: Param description
+  leave: Param description
+  invite: Param description
+  ban: Param description
+  unban: Param description
+  kick: Param description
+  unkick: Param description
+  promote: Param description
+  demote: Param description
+  info: Param description
+  settings: Param description
+  pinned: Param description
+  edit: Param description
+  delete: Param description

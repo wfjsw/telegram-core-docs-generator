@@ -1,0 +1,7 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  document: Param description
+  emoji: Param description
+  mask_coords: Param description

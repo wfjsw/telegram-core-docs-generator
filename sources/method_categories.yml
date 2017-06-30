@@ -1,5 +1,5 @@
 - name: Registration / Authorization
-  methods: 
+  methods:
     - auth.checkPhone
     - auth.sendCode
     - auth.signUp
@@ -18,7 +18,7 @@
     - auth.cancelCode
     - auth.dropTempAuthKeys
 - name: Working with Account Settings
-  methods: 
+  methods:
     - account.registerDevice
     - account.unregisterDevice
     - account.updateNotifySettings
@@ -47,7 +47,7 @@
     - photos.uploadProfilePhoto
     - photos.deletePhotos
 - name: Working with Users
-  methods: 
+  methods:
     - users.getUsers
     - users.getFullUser
     - photos.getUserPhotos
@@ -55,7 +55,7 @@
     - account.updateUsername
     - contacts.resolveUsername
 - name: Working with Contacts
-  methods: 
+  methods:
     - contacts.getStatuses
     - contacts.getContacts
     - contacts.importContacts
@@ -67,7 +67,7 @@
     - contacts.getTopPeers
     - contacts.resetTopPeerRating
 - name: Working with the Black List
-  methods: 
+  methods:
     - contacts.block
     - contacts.unblock
     - contacts.getBlocked
@@ -101,12 +101,13 @@
     - messages.getPeerDialogs
     - messages.saveDraft
     - messages.getAllDrafts
+    - messages.uploadMedia
 - name: Working with Link Preview / Instant View™
   methods:
     - messages.getWebPagePreview
     - messages.getWebPage
 - name: Working with Chats
-  methods: 
+  methods:
     - messages.getPeerSettings
     - messages.getChats
     - messages.getFullChat
@@ -124,7 +125,7 @@
     - messages.getCommonChats
     - messages.getAllChats
 - name: Working with Secret Chats
-  methods: 
+  methods:
     - messages.getDhConfig
     - messages.requestEncryption
     - messages.acceptEncryption
@@ -136,7 +137,7 @@
     - messages.sendEncryptedService
     - messages.receivedQueue
 - name: Working with Channels / Supergroups
-  methods: 
+  methods:
     - channels.getParticipants
     - channels.getParticipant
     - channels.getChannels
@@ -151,7 +152,6 @@
     - channels.joinChannel
     - channels.leaveChannel
     - channels.inviteToChannel
-    - channels.kickFromChannel
     - channels.exportInvite
     - channels.deleteChannel
     - channels.toggleInvites
@@ -159,8 +159,10 @@
     - channels.toggleSignatures
     - channels.updatePinnedMessage
     - channels.getAdminedPublicChannels
+    - channels.editBanned
+    - channels.getAdminLog
 - name: Working with Spam Report
-  methods: 
+  methods:
     - account.reportPeer
     - messages.reportSpam
     - messages.hideReportSpam
@@ -176,7 +178,7 @@
     - upload.reuploadCdnFile
     - messages.getDocumentByHash
 - name: Working with Telegram Call™
-  methods: 
+  methods:
     - phone.getCallConfig
     - phone.requestCall
     - phone.acceptCall
@@ -203,13 +205,17 @@
     - messages.getSavedGifs
     - messages.saveGif
     - messages.reorderStickerSets
+    - stickers.createStickerSet
+    - stickers.removeStickerFromSet
+    - stickers.changeStickerPosition
+    - stickers.addStickerToSet
 - name: Working with Updates
   methods:
     - updates.getState
     - updates.getDifference
     - updates.getChannelDifference
 - name: Working with Payments
-  methods: 
+  methods:
     - payments.getPaymentForm
     - payments.getPaymentReceipt
     - payments.validateRequestedInfo
@@ -219,7 +225,7 @@
     - messages.setBotShippingResults
     - messages.setBotPrecheckoutResults
 - name: Working with Bots
-  methods: 
+  methods:
     - messages.startBot
     - bots.sendCustomRequest
     - bots.answerWebhookJSONQuery

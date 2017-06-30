@@ -1,0 +1,7 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  id: Param description
+  date: Param description
+  user_id: Param description
+  action: Param description

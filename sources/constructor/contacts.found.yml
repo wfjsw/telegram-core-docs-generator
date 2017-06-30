@@ -1,5 +1,5 @@
-description: Sample Description
+description: Users found by name substring and auxiliary data.
 params_desc:
-  results: Param description
-  chats: Param description
-  users: Param description
+  results: List of found user identifiers
+  chats: List of chats
+  users: List of users

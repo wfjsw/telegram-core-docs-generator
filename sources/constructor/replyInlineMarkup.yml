@@ -1,3 +1,3 @@
-description: Sample Description
+description: This object represents an inline keyboard that appears right next to the message it belongs to.
 params_desc:
-  rows: Param description
+  rows: Array of button rows, each represented by an Array of keyboardButtonRow objects

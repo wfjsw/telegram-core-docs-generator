@@ -1,5 +1,5 @@
-description: Sample Description
+description: Deletes the user from the blacklist.
 params_desc:
-  id: Param description
+  id: User ID
 result: Describe the result
 errors: []

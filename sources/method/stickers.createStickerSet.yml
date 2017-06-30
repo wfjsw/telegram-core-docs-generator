@@ -1,0 +1,9 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  masks: Param description
+  user_id: Param description
+  title: Param description
+  short_name: Param description
+  stickers: Param description
+errors: []

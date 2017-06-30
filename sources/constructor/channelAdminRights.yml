@@ -1,0 +1,13 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  change_info: Param description
+  post_messages: Param description
+  edit_messages: Param description
+  delete_messages: Param description
+  ban_users: Param description
+  invite_users: Param description
+  invite_link: Param description
+  pin_messages: Param description
+  add_admins: Param description

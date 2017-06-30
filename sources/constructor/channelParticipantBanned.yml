@@ -1,0 +1,9 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  left: Param description
+  user_id: Param description
+  kicked_by: Param description
+  date: Param description
+  banned_rights: Param description

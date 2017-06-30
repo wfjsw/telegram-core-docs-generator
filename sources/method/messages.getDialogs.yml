@@ -1,10 +1,10 @@
-description: Sample Description
+description: Returns the current user dialog list.
 params_desc:
   flags: Param description
-  exclude_pinned: Param description
+  exclude_pinned: Do not include pinned chat
   offset_date: Param description
   offset_id: Param description
   offset_peer: Param description
-  limit: Param description
+  limit: Number of list elements to be returned
 result: Describe the result
 errors: []

@@ -1,0 +1,13 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  view_messages: Param description
+  send_messages: Param description
+  send_media: Param description
+  send_stickers: Param description
+  send_gifs: Param description
+  send_games: Param description
+  send_inline: Param description
+  embed_links: Param description
+  until_date: Param description

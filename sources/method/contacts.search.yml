@@ -1,6 +1,6 @@
-description: Sample Description
+description: Returns users found by username substring.
 params_desc:
-  q: Param description
-  limit: Param description
+  q: Target substring
+  limit: Maximum number of users to be returned
 result: Describe the result
 errors: []

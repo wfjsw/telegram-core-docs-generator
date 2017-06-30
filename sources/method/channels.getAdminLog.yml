@@ -1,0 +1,11 @@
+description: Sample Description
+params_desc:
+  flags: Param description
+  channel: Param description
+  q: Param description
+  events_filter: Param description
+  admins: Param description
+  max_id: Param description
+  min_id: Param description
+  limit: Param description
+errors: []

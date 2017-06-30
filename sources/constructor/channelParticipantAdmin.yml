@@ -1,0 +1,10 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  can_edit: Param description
+  user_id: Param description
+  inviter_id: Param description
+  promoted_by: Param description
+  date: Param description
+  admin_rights: Param description

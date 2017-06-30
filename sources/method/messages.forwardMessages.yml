@@ -1,12 +1,12 @@
-description: Sample Description
+description: Forwards messages by their IDs.
 params_desc:
   flags: Param description
-  silent: Param description
+  silent: Prevent the message from producing a sound notification
   background: Param description
   with_my_score: Param description
-  from_peer: Param description
-  id: Param description
-  random_id: Param description
-  to_peer: Param description
+  from_peer: User or chat where messages are occupied
+  id: Message ID list
+  random_id: Unique client message ID required to prevent message resending
+  to_peer: User or chat where messages will be forwarded
 result: Describe the result
 errors: []

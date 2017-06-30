@@ -1,0 +1,5 @@
+description: Sample Description
+params_desc:
+  sticker: Param description
+  position: Param description
+errors: []

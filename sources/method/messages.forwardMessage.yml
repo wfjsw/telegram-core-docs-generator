@@ -1,7 +1,7 @@
-description: Sample Description
+description: Forwards single messages.
 params_desc:
-  peer: Param description
-  id: Param description
-  random_id: Param description
+  peer: User or chat where a message will be forwarded
+  id: Forwarded message ID
+  random_id: Unique client message ID required to prevent message resending
 result: Describe the result
 errors: []

@@ -1,0 +1,11 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  flags: Param description
+  key: Param description
+  zero_value: Param description
+  one_value: Param description
+  two_value: Param description
+  few_value: Param description
+  many_value: Param description
+  other_value: Param description
