@@ -1,7 +1,9 @@
 description: Sample Description
+additional_info: ''
 params_desc:
   flags: Param description
   from_id: Param description
   date: Param description
   channel_id: Param description
   channel_post: Param description
+  post_author: Param description

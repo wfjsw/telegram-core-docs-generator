@@ -173,6 +173,7 @@
     - upload.saveFilePart
     - upload.getFile
     - upload.saveBigFilePart
+    - upload.getCdnFileHashes
     - upload.getWebFile
     - upload.getCdnFile
     - upload.reuploadCdnFile

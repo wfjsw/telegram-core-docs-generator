@@ -4,3 +4,4 @@ params_desc:
   file_token: Param description
   encryption_key: Param description
   encryption_iv: Param description
+  cdn_file_hashes: Param description

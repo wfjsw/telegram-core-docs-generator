@@ -1,0 +1,5 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  client_id: Param description
+  importers: Param description

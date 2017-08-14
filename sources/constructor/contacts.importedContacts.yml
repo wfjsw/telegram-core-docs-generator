@@ -1,5 +1,7 @@
 description: Sample Description
+additional_info: ''
 params_desc:
   imported: Param description
+  popular_invites: Param description
   retry_contacts: Param description
   users: Param description

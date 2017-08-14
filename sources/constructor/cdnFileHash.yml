@@ -1,0 +1,6 @@
+description: Sample Description
+additional_info: ''
+params_desc:
+  offset: Param description
+  limit: Param description
+  hash: Param description

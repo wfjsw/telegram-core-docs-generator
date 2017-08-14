@@ -1,4 +1,7 @@
 description: Sample Description
+additional_info: ''
 params_desc:
+  flags: Param description
   document: Param description
   caption: Param description
+  ttl_seconds: Param description

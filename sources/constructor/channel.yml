@@ -1,11 +1,10 @@
 description: Sample Description
+additional_info: ''
 params_desc:
   flags: Param description
   creator: Param description
-  kicked: Param description
   left: Param description
   editor: Param description
-  moderator: Param description
   broadcast: Param description
   verified: Param description
   megagroup: Param description
@@ -21,3 +20,5 @@ params_desc:
   date: Param description
   version: Param description
   restriction_reason: Param description
+  admin_rights: Param description
+  banned_rights: Param description

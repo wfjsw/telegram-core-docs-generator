@@ -1,5 +1,5 @@
 description: Sample Description
 params_desc:
   file_token: Param description
-  request_token: Param description
+  offset: Param description
 errors: []
