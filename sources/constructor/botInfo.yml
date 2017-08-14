@@ -1,5 +1,5 @@
-description: Sample Description
+description: Contains info about a bot
 params_desc:
-  user_id: Param description
-  description: Param description
-  commands: Param description
+  user_id: unique identifier
+  description: description text
+  commands: registered commands

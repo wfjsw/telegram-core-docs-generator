@@ -1,5 +1,5 @@
-description: Sample Description
+description: Contains user authorization info.
 params_desc:
-  flags: Param description
+  flags: Indicates what optional params are present
   tmp_sessions: Param description
   user: Param description

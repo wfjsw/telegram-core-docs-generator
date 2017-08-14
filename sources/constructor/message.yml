@@ -10,7 +10,7 @@ params_desc:
     Parameter deprecated as of Layer 17.
   mentioned: Param description
   media_unread: Param description
-  silent: Param description
+  silent: Whether it should trigger sound notification on recipient
   post: Param description
   id: Message id
   from_id: Message sender

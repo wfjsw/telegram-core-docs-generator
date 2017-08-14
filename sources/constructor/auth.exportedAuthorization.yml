@@ -1,4 +1,4 @@
-description: Sample Description
+description: Data for copying of authorization between data centres.
 params_desc:
-  id: Param description
-  bytes: Param description
+  id: current user identifier
+  bytes: authorizes key
